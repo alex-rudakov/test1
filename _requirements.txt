@@ -1,0 +1,8 @@
+# generated: cf1df495394bae80e65552d6deb3b55a
+
+celery
+django-suit
+django>2
+djangorestframework
+redis
+wheel

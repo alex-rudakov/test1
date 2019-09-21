@@ -1,0 +1,32 @@
+@suit("Test assignment")
+
+
+#currency: "Currency"/"Currencies"
+-------------
+=name
+
+@admin(
+    list: *
+)
+@api(*)
+@rest(
+    auth(basic)
+    fields: name [r]
+)
+
+
+#rate
+------------
+currency: one(#currency -> rates)
+date: date
+rate: decimal
+volume: decimal
+
+@admin(
+    list: *
+)
+@api(*)
+@rest(
+    auth(basic)
+    fields: * [r]
+)
